@@ -1,0 +1,19 @@
+<h1>Homes#index</h1>
+<p>Find me in app/views/homes/index.html.erb</p>
+<h1 class='homes'>WELCOME</h1>
+
+<div class="whole">
+<% 10.times  do %>
+<p class="disp"><%= @homes %></p> </br>
+<% end %>
+
+<% if @homes == "california" && @homes == 'america'%>
+
+<%= @homes %>
+
+<% else %>
+
+<%= @homes + " " + "is in america"%>
+
+<% end %>
+</div>
